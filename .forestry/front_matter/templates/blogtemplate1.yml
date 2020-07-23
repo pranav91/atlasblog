@@ -17,13 +17,3 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-- name: content
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Content
-  description: Write your blog
