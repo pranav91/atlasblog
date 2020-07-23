@@ -1,4 +1,29 @@
 ---
 label: blogtemplate1
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: What isthe title of your blog post?
+- name: datecreated
+  type: datetime
+  label: Date
+  description: When did you publish this document?
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Content
+  description: Write your blog
